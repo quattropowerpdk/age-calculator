@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="form">
+        <form>
+          <label for="day"
+            ><p class="label_p label_p_day">Day</p>
+            <input type="number" id="day" placeholder="DD" min="1" max="31" />
+            <p class="label_error_empty label_error_empty_day hidden">
+              This field is required
+            </p>
+            <p class="label_error_empty label_error_empty_valid_day hidden">
+              Must be a valid day
+            </p>
+          </label>
+
+          <label for="month">
+            <p class="label_p label_p_month">Month</p>
+            <input type="number" id="month" placeholder="MM" />
+            <p class="label_error_empty label_error_empty_month hidden">
+              This field is required
+            </p>
+            <p class="label_error_empty label_error_empty_valid_month hidden">
+              Must be a valid month
+            </p>
+          </label>
+
+          <label for="year">
+            <p class="label_p label_p_year">Year</p>
+            <input type="number" id="year" placeholder="YYYY" />
+            <p class="label_error_empty label_error_empty_year hidden">
+              This field is required
+            </p>
+            <p class="label_error_empty label_error_empty_valid_year hidden">
+              Must be in the past
+            </p>
+          </label>
+        </form>
+      </div>
+
+      <div class="arrow">
+        <div class="line"></div>
+        <div class="img_container">
+          <img class="button" src="./assets/images/icon-arrow.svg" />
+        </div>
+      </div>
+
+      <div class="bottom">
+        <h2 class="bottom_h2"><span class="span_years">--</span> years</h2>
+        <h2 class="bottom_h2"><span class="span_months">--</span> months</h2>
+        <h2 class="bottom_h2"><span class="span_days">--</span> days</h2>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
